@@ -1,3 +1,7 @@
+# 1.1.0 (11/22/2012)
+- Adds missing header comments
+- Updates author's email address
+
 # 1.0.0 (09/02/2011)
 
 Initial release.
