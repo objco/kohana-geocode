@@ -60,8 +60,8 @@ class Kohana_Geocode_Google extends Geocode
 	 * @param   array   API parameters
 	 * @return  string
 	 */
-	 public function api_url($params = array())
-	 {
+	public function api_url($params = array())
+	{
 		if (empty($params['ie']))
 		{
 			// Set input encoding to UTF-8
@@ -83,7 +83,7 @@ class Kohana_Geocode_Google extends Geocode
 		$protocol = (isset($this->_config['enable_https']) AND $this->_config['enable_https'] === TRUE) ? 'https://' : 'http://';
 		
 		return $protocol.'maps.googleapis.com/maps/api/geocode/json?'.http_build_query($params);
-	 }
+	}
 	
 	/**
 	 * Queries the Google geocoding service and returns the results.
